@@ -11,9 +11,6 @@ export default function RootLayout({
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const userId = localStorage.getItem("userId");
-    const restrictedPages = ["/", "/login", "/register"];
 
     if (userId) {
       setIsLoggedIn(true);
