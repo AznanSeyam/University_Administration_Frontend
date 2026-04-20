@@ -36,7 +36,6 @@ export default function Transactions() {
             <thead>
               <tr className="bg-gray-200 text-left">
                 <th className="px-4 py-2">Receiver Email</th>
-                <th className="px-4 py-2">Receiver Account Number</th>
                 <th className="px-4 py-2">Amount</th>
                 <th className="px-4 py-2">Date</th>
               </tr>
