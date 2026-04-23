@@ -15,7 +15,7 @@ export default function RootLayout({
       if (restrictedPages.includes(window.location.pathname)) {
         localStorage.removeItem("userId"); 
         setIsLoggedIn(false);
-        router.replace("/login"); 
+        
       }
     } else {
       setIsLoggedIn(false);
