@@ -20,7 +20,7 @@ export default function Transactions() {
       .catch(() => {
         setError("Failed to load transactions.");
         setLoading(false);
-      });
+      })
   }, []);
 
   return (
