@@ -4,7 +4,6 @@
 export default function Transactions() {
   const router = useRouter();
   const [transactions, setTransactions] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const userId = typeof window !== "undefined" ? localStorage.getItem("userId") : null;
 
