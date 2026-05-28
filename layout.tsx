@@ -22,7 +22,6 @@ export default function RootLayout({
 
   const handleLogout = () => {
     localStorage.removeItem("userId");
-    setIsLoggedIn(false);
     router.push("/login");
   };
 
