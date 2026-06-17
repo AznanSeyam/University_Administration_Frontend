@@ -7,7 +7,6 @@ export default function Transactions() {
   const [error, setError] = useState<string | null>(null);
   const userId = typeof window !== "undefined" ? localStorage.getItem("userId") : null;
 
-
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/transactions/history/${userId}`)
       .then((res) => res.json())
       .then((data) => {
